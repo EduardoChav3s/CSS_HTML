@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo TechFood - Grid + Media Query</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header id="topo-loja">
+        <h1>TechFood - Sabor e Saber</h1>
+        <p id="boas-vindas">Carregando...</p>
+        <p id="nome">Seu nome aqui</p>
+
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu" id="label-menu">&#9776;</label>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="#section-massas">Massas</a></li>
+                <li><a href="#section-sobremesas">Sobremesas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-massas">
+            <h2 class="title-section">Nossas massas</h2>
+            <div class="vitrine-grid">
+                <article class="card">
+                    <img src="src/images/image-8.jpeg" alt="Macarrão ao molho sugo">
+                    <h3>Macarrão ao molho sugo</h3>
+                    <p class="desc">Massa artesanal e molho especial.</p>
+                    <span class="preco">R$45,00</span>
+                    <button class="bt_pedido">Pedir agora   </button>
+                </article>
+
+                <article class="card-nhoque" id="card-nhoque"
+                    <img src="src/images/nhoque-de-batata-com-molho-bolonhesa-1507549-article.webp" alt="Nhoque a bolonhesa" id="foto-destaque">    
+                    <h3>Nhoque á bolonhesa</h3>
+                    <p class="desc">Batata fresca e carne.</p>
+                    <div class="quantidade">
+                        <label for="qtd-nhoque"></label>
+                        <input type="number" id="qtd-nhoque" value="1" min="1">
+                    </div>
+                    <span class="preco">R$38,00</span>
+                    <button class="bt_pedido">Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <img src="src/images/f58949a51d1d4f6f300f7e190b0dedbf_macarrao-ao-molho-sugo-receitas-nestle.jpg" alt="Spaghetti alla puttanesca">
+                    <h3>Spaghetti alla puttanesca</h3>
+                    <p class="desc">Receita original italiana.</p>
+                    <span class="preco" id="preco-nhoque">R$42,00</span>
+                    <button class="bt_pedido">Pedir agora</button>
+                </article>
+            </div>
+        </section>
+        <section id="section-sobremesas">
+            <h2 class="title-section">Nossas Sobremesas</h2>
+            <div class="vitrine-grid"> 
+                <article class="card">
+                    <img src="src/images/6527be00a1ed2e4c876d03a0348b2bbe.avif" alt="Banana Split">
+                    <h3>Banana Split</h3>
+                    <p class="desc">Um clássico com calda de chocolate.</p>
+                    <span class="preco">R$20,00</span>
+                    <button class="bt_pedido">Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <img src="src/images/pastel+de+belem-640w.webp" alt="Pastel de Belém">
+                    <h3>Pastel de Belém</h3>
+                    <p class="desc">É um pastel e é de Belém.</p>
+                    <span class="preco">R$20,00</span>
+                    <button class="bt_pedido">Pedir agora</button>
+                </article>
+
+                <article class="card">
+                    <img src="src/images/mousse-de-maracuja.webp" alt="Mousse de Maracujá">
+                    <h3>Mousse de Maracujá</h3>
+                    <p class="desc">Feito com sementes.</p>
+                    <span class="preco">R$18,00</span>
+                    <button class="bt_pedido">Pedir agora</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div class="info-footer">
+            <p><strong>TechFood &#169</strong></p>
+            <p>Rua das guloseimas 445, Jd. Comilança - Indaiatuba</p>
+        </div>
+    </footer>
+<!-- <script src="src/scripts/aula4.js"></script> -->
+<script src="src/scripts/aula6.js"></script>
+</body>
+</html>

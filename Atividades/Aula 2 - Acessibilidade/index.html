@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>TechFood - Cardápio Digital</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">TechFood</div>
+        <button class="search-icon">🔍</button> <button class="cart-icon">🛒</button>   </div>
+
+    <div class="banner-hero">
+        <h1>Sabor & Saber</h1>
+        <p>A melhor gastronomia tecnológica da região.</p>
+    </div>
+
+    <div class="menu-container">
+        <div class="abas-lista">
+            <input type="radio" name="categoria" id="massa" checked>
+            <label for="massa">Massas</label>
+
+            <input type="radio" name="categoria" id="bebida">
+            <label for="bebida">Bebidas</label>
+
+            <input type="radio" name="categoria" id="doce">
+            <label for="doce">Doces</label>
+        </div>
+
+        <div class="aba-tela" id="tela-massas">
+            <div class="grid-produtos">
+                <div class="card">
+                    <img src="src/images/lasanha.jpg" alt="Uma Lasanha Bolonhosa de 4 queijos">
+                    <h3>Lasanha Tradicional</h3>
+                    <p>Massa artesanal ao molho bolonhesa com 4 queijos.</p>
+                    <p class="preco">R$ 45,90</p>
+                    <button class="btn-pedir" onclick="alert('Adicionado')">Pedir</button>
+                </div>
+
+                <div class="card">
+                    <img src="src/images/ravioli.jpg" alt="Comida Ravioli recheado de ricota fresca e nozes picadas">
+                    <h3>Ravioli de Espinafre</h3>
+                    <p>Recheado com ricota fresca e nozes picadas.</p>
+                    <p class="preco">R$ 39,00</p>
+                    <button class="btn-pedir">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <p>Siga-nos: <a href="#">FB</a> <a href="#">IG</a></p>
+    </footer>
+</body>
+</html>
